@@ -79,6 +79,26 @@
     }
     .badge.active { background: #0066cc; color: white; }
     .badge.inactive { background: #555; color: #999; }
+    .stat-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px 0;
+      border-left: 3px solid #0066cc;
+    }
+    .stat-card h3 {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 5px;
+    }
+    .stat-card .value {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .loading {
+      color: #999;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -86,6 +106,7 @@
     <div class="sidebar">
       <h3>Colossus</h3>
       <div class="nav-item active" onclick="showTab('cron-jobs', event)">Cron Jobs</div>
+      <div class="nav-item" onclick="showTab('token-usage', event)">Token Usage</div>
     </div>
     <div class="main">
       <h1>Dashboard</h1>
@@ -117,6 +138,24 @@
           </tbody>
         </table>
       </div>
+
+      <div id="token-usage" class="tab-content">
+        <h2>Token Usage</h2>
+        <div id="token-summary" class="loading">Loading...</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Timestamp</th>
+              <th>Model</th>
+              <th>Input</th>
+              <th>Output</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="token-table">
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -126,6 +165,48 @@
       document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
       document.getElementById(tabId).classList.add('active');
       event.target.classList.add('active');
+
+      if (tabId === 'token-usage') {
+        loadTokenData();
+      }
+    }
+
+    async function loadTokenData() {
+      try {
+        const response = await fetch('/data/tokens.json');
+        if (!response.ok) throw new Error('No token data');
+        const data = await response.json();
+
+        // Summary stats
+        let summary = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">';
+        Object.entries(data.summary || {}).forEach(([model, stats]) => {
+          summary += `
+            <div class="stat-card">
+              <h3>${model}</h3>
+              <div class="value">${stats.total.toLocaleString()}</div>
+              <div style="font-size: 12px; color: #666;">tokens (${stats.sessions} sessions)</div>
+            </div>
+          `;
+        });
+        summary += '</div>';
+        document.getElementById('token-summary').innerHTML = summary;
+
+        // Sessions table
+        const tbody = document.getElementById('token-table');
+        tbody.innerHTML = '';
+        (data.sessions || []).reverse().forEach(session => {
+          const row = tbody.insertRow();
+          row.innerHTML = `
+            <td>${new Date(session.timestamp).toLocaleString()}</td>
+            <td>${session.model}</td>
+            <td>${session.inputTokens.toLocaleString()}</td>
+            <td>${session.outputTokens.toLocaleString()}</td>
+            <td><strong>${session.totalTokens.toLocaleString()}</strong></td>
+          `;
+        });
+      } catch (err) {
+        document.getElementById('token-summary').innerHTML = '<p style="color: #666;">No token data yet</p>';
+      }
     }
   </script>
 </body>
