@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-12T18:21:09.351609",
-  "totalProjects": 47,
+  "generated": "2026-04-12T22:27:51.655709+00:00",
+  "totalProjects": 42,
   "projects": [
     {
       "id": "business_plan",
@@ -19,24 +19,6 @@
       "location": "Projects/Company Name Research - Against The Grain.md",
       "description": "| Variation | Status | Notes |",
       "lastUpdate": "2026-03-28"
-    },
-    {
-      "id": "company_name_research_-_rdctd",
-      "name": "Company Name Research - Rdctd",
-      "status": "active",
-      "category": "Business",
-      "location": "Projects/Company Name Research - Rdctd.md",
-      "description": "| Variation | Notes |",
-      "lastUpdate": "2026-03-28"
-    },
-    {
-      "id": "gafshub_parts_scraper",
-      "name": "GAFSHub Parts Scraper",
-      "status": "active",
-      "category": "Business",
-      "location": "Projects/GAFSHub Parts Scraper.md",
-      "description": "Automated parts monitoring for GAFSHub.com (invite-only firearms marketplace). Custom scraper watches for specific keywords and sends real-time alerts.",
-      "lastUpdate": "2026-03-27"
     },
     {
       "id": "bureau_of_general_affairs_business_plan",
@@ -239,11 +221,11 @@
     {
       "id": "cians_room_-_poster_hanging",
       "name": "Cian's Room - Poster Hanging",
-      "status": "active",
+      "status": "complete",
       "category": "House",
       "location": "Projects/Cian's Room - Poster Hanging.md",
       "description": "| Poster | Bracket X (Center) | Left Edge | Right Edge |",
-      "lastUpdate": "2026-04-11"
+      "lastUpdate": "2026-04-12"
     },
     {
       "id": "front_yard_landscaping_edging",
@@ -257,11 +239,11 @@
     {
       "id": "hang_pictures_in_cians_room",
       "name": "Hang Pictures in Cian's Room",
-      "status": "active",
+      "status": "complete",
       "category": "House",
       "location": "Projects/Hang Pictures in Cian's Room.md",
       "description": "- [[\u2731 House]]",
-      "lastUpdate": "2026-03-21"
+      "lastUpdate": "2026-04-12"
     },
     {
       "id": "lawn_care",
@@ -318,24 +300,6 @@
       "lastUpdate": "2026-04-10"
     },
     {
-      "id": "boo_boo_kit",
-      "name": "Boo Boo Kit",
-      "status": "active",
-      "category": "Kits & Preparedness",
-      "location": "Projects/Boo Boo Kit.md",
-      "description": "Basic first aid supplies for minor wounds, pain, sunburn, and poison ivy/allergic reactions. **Separate from trauma kits.** Stored in vehicles (Tacoma cab + Riv...",
-      "lastUpdate": "2026-03-22"
-    },
-    {
-      "id": "ifak_(individual_first_aid_kit)",
-      "name": "IFAK (Individual First Aid Kit)",
-      "status": "active",
-      "category": "Kits & Preparedness",
-      "location": "Projects/IFAK (Individual First Aid Kit).md",
-      "description": "Minimal trauma-focused kit designed for everyday carry in Ferro Concepts Roll 1 Trauma Pouch. **Trauma only** \u2014 no boo boo items. Sized for single adult, kids +...",
-      "lastUpdate": "2026-03-25"
-    },
-    {
       "id": "medical_kits",
       "name": "Medical Kits",
       "status": "active",
@@ -374,11 +338,11 @@
     {
       "id": "lakewood_school_levy_2026_website",
       "name": "Lakewood School Levy 2026 Website",
-      "status": "active",
+      "status": "complete",
       "category": "Travel & Community",
       "location": "Projects/Lakewood School Levy 2026 Website.md",
       "description": "- [ ] Have mobile menu sit on top of the content",
-      "lastUpdate": "2026-03-28"
+      "lastUpdate": "2026-04-12"
     },
     {
       "id": "travel_-_packing_guide_-_research",
@@ -397,15 +361,6 @@
       "location": "Projects/Tacoma Mods.md",
       "description": "- **MyMedic MOLLE med kit** mounted to truck bed MOLLE panel alongside a red folding shovel",
       "lastUpdate": "2026-03-23"
-    },
-    {
-      "id": "vehicle_trauma_kits_(tacoma_+_rivian)",
-      "name": "Vehicle Trauma Kits (Tacoma + Rivian)",
-      "status": "active",
-      "category": "Vehicles",
-      "location": "Projects/Vehicle Trauma Kits (Tacoma + Rivian).md",
-      "description": "Two separate trauma kits designed for vehicle storage: **Tacoma** (bed-mounted MOLLE bag, high-risk environment) + **Rivian** (interior, family). Both support \u00d7...",
-      "lastUpdate": "2026-03-25"
     },
     {
       "id": "finding_a_new_car",

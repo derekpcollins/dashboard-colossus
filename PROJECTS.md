@@ -1,22 +1,22 @@
 # Derek's Project Master List
 
-**Generated:** 2026-04-12T18:21:09.351609  
-**Total Projects:** 47
+**Generated:** 2026-04-12T22:27:00.000000  
+**Total Projects:** 42
 
 ## Summary by Status
 
 | Status | Count |
 |--------|-------|
-| **Active** | 20 |
+| **Active** | 15 |
 | **Planning** | 0 |
 | **On-Hold** | 0 |
 | **Complete** | 27 |
 
 ## Projects by Category
 
-### Business (7)
+### Business (5)
 
-#### Active (4)
+#### Active (2)
 
 - **Business Plan**  
   __Self-funded online business to generate revenue for Mac mini upgrade + AI token costs. Research and analysis in progress.__  
@@ -25,14 +25,6 @@
 - **Company Name Research - Against The Grain**  
   __| Variation | Status | Notes |__  
   📍 `Projects/Company Name Research - Against The Grain.md` | 📅 2026-03-28
-
-- **Company Name Research - Rdctd**  
-  __| Variation | Notes |__  
-  📍 `Projects/Company Name Research - Rdctd.md` | 📅 2026-03-28
-
-- **GAFSHub Parts Scraper**  
-  __Automated parts monitoring for GAFSHub.com (invite-only firearms marketplace). Custom scraper watches for specific keywords and sends real-time alerts.__  
-  📍 `Projects/GAFSHub Parts Scraper.md` | 📅 2026-03-27
 
 #### Complete (3)
 
@@ -180,23 +172,16 @@
   📍 `Projects/Spring Lawn Care Schedule.md` | 📅 2026-04-10
 
 
-### Kits & Preparedness (4)
+### Kits & Preparedness (3)
 
-#### Active (3)
+#### Active (1)
 
-- **Boo Boo Kit**  
-  __Basic first aid supplies for minor wounds, pain, sunburn, and poison ivy/allergic reactions. **Separate from trauma kits.** Stored in vehicles (Tacoma cab + Riv...__  
-  📍 `Projects/Boo Boo Kit.md` | 📅 2026-03-22
+- **Medical Kits** *(Hub Project)*  
+  __Comprehensive medical preparedness across EDC, vehicles, and home. Consolidated parent project for IFAK, Vehicle Trauma Kits, and Boo Boo Kit. Organized by level of care (trauma vs. minor first aid) and location (personal carry, Tacoma, Rivian).__  
+  📍 `Projects/Medical Kits.md` | 📅 2026-04-12
+  - Sub-projects: [[IFAK (Individual First Aid Kit)]] | [[Vehicle Trauma Kits (Tacoma + Rivian)]] | [[Boo Boo Kit]]
 
-- **IFAK (Individual First Aid Kit)**  
-  __Minimal trauma-focused kit designed for everyday carry in Ferro Concepts Roll 1 Trauma Pouch. **Trauma only** — no boo boo items. Sized for single adult, kids +...__  
-  📍 `Projects/IFAK (Individual First Aid Kit).md` | 📅 2026-03-25
-
-- **Medical Kits**  
-  __Comprehensive medical preparedness across EDC, vehicles, and home. Organized by level of care (trauma vs. minor first aid) and location (personal carry, Tacoma,...__  
-  📍 `Projects/Medical Kits.md` | 📅 2026-03-22
-
-#### Complete (1)
+#### Complete (2)
 
 - **Tactical Kit**  
   __- [ ] Meshtastic nodes — RAK WisBlock or Heltec V3, buy 2–3 (~$40/node)__  
@@ -234,17 +219,13 @@
   📍 `Projects/Travel - Packing Guide - Research.md` | 📅 2026-04-09
 
 
-### Vehicles (3)
+### Vehicles (2)
 
-#### Active (2)
+#### Active (1)
 
 - **Tacoma Mods**  
   __- **MyMedic MOLLE med kit** mounted to truck bed MOLLE panel alongside a red folding shovel__  
   📍 `Projects/Tacoma Mods.md` | 📅 2026-03-23
-
-- **Vehicle Trauma Kits (Tacoma + Rivian)**  
-  __Two separate trauma kits designed for vehicle storage: **Tacoma** (bed-mounted MOLLE bag, high-risk environment) + **Rivian** (interior, family). Both support ×...__  
-  📍 `Projects/Vehicle Trauma Kits (Tacoma + Rivian).md` | 📅 2026-03-25
 
 #### Complete (1)
 
