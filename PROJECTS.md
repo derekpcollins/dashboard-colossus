@@ -1,6 +1,6 @@
 # Derek's Project Master List
 
-**Generated:** 2026-04-12T22:27:00.000000  
+**Generated:** 2026-04-12T22:27:51.655709+00:00  
 **Total Projects:** 42
 
 ## Summary by Status
@@ -8,8 +8,6 @@
 | Status | Count |
 |--------|-------|
 | **Active** | 15 |
-| **Planning** | 0 |
-| **On-Hold** | 0 |
 | **Complete** | 27 |
 
 ## Projects by Category
@@ -131,19 +129,15 @@
 
 ### House (9)
 
-#### Active (5)
+#### Active (4)
 
 - **Cian's Room - Poster Hanging**  
   __| Poster | Bracket X (Center) | Left Edge | Right Edge |__  
-  📍 `Projects/Cian's Room - Poster Hanging.md` | 📅 2026-04-11
+  📍 `Projects/Cian's Room - Poster Hanging.md` | 📅 2026-04-12
 
 - **Front Yard Landscaping Edging**  
   __Install COR-TEN steel landscape edging around the entire front bed perimeter. COR-TEN develops a natural rust patina over time and lasts 100+ years with minimal...__  
   📍 `Projects/Front Yard Landscaping Edging.md` | 📅 2026-04-11
-
-- **Hang Pictures in Cian's Room**  
-  __- [[✱ House]]__  
-  📍 `Projects/Hang Pictures in Cian's Room.md` | 📅 2026-03-21
 
 - **Lawn Care**  
   __Front lawn spring/summer maintenance plan for NE Ohio. Goal: eliminate clover, overseed thin areas, establish premium grass.__  
@@ -153,7 +147,7 @@
   __- Exterior: 15.87" W × 18.52" H × 3.88" D__  
   📍 `Projects/TV Install - Sanus Mount.md` | 📅 2026-03-26
 
-#### Complete (4)
+#### Complete (5)
 
 - **Backyard Entertainment Space**  
   __Create an outdoor gathering area with fireplace, pergola, seating, and entertainment amenities. Plan for drainage in wet clay soil (typical for Lakewood).__  
@@ -162,6 +156,10 @@
 - **Home Network Redesign**  
   __Security-first network architecture separating personal devices, IoT, and parental controls. Phased implementation with minimal disruption.__  
   📍 `Projects/Home Network Redesign.md` | 📅 2026-03-27
+
+- **Hang Pictures in Cian's Room**  
+  __- [[✱ House]]__  
+  📍 `Projects/Hang Pictures in Cian's Room.md` | 📅 2026-04-12
 
 - **Install Frame TV**  
   __Install Samsung The Frame TV with Sanus in-wall cable box behind fireplace. Professional walkthrough with all considerations.__  
@@ -176,10 +174,9 @@
 
 #### Active (1)
 
-- **Medical Kits** *(Hub Project)*  
-  __Comprehensive medical preparedness across EDC, vehicles, and home. Consolidated parent project for IFAK, Vehicle Trauma Kits, and Boo Boo Kit. Organized by level of care (trauma vs. minor first aid) and location (personal carry, Tacoma, Rivian).__  
-  📍 `Projects/Medical Kits.md` | 📅 2026-04-12
-  - Sub-projects: [[IFAK (Individual First Aid Kit)]] | [[Vehicle Trauma Kits (Tacoma + Rivian)]] | [[Boo Boo Kit]]
+- **Medical Kits**  
+  __Comprehensive medical preparedness across EDC, vehicles, and home. Organized by level of care (trauma vs. minor first aid) and location (personal carry, Tacoma,...__  
+  📍 `Projects/Medical Kits.md` | 📅 2026-03-22
 
 #### Complete (2)
 
@@ -208,15 +205,17 @@
 
 ### Travel & Community (2)
 
-#### Active (2)
-
-- **Lakewood School Levy 2026 Website**  
-  __- [ ] Have mobile menu sit on top of the content__  
-  📍 `Projects/Lakewood School Levy 2026 Website.md` | 📅 2026-03-28
+#### Active (1)
 
 - **Travel - Packing Guide - Research**  
   __Every item you pack should do at least two jobs. A merino wool crew sweater works as a mid-layer under a jacket, a standalone shirt in cool weather, and a light...__  
   📍 `Projects/Travel - Packing Guide - Research.md` | 📅 2026-04-09
+
+#### Complete (1)
+
+- **Lakewood School Levy 2026 Website**  
+  __- [ ] Have mobile menu sit on top of the content__  
+  📍 `Projects/Lakewood School Levy 2026 Website.md` | 📅 2026-04-12
 
 
 ### Vehicles (2)
@@ -241,5 +240,4 @@
 - **Workbench Build**  
   __- [[✱ Woodworking]]__  
   📍 `Projects/Workbench Build.md` | 📅 2026-04-01
-
 
