@@ -230,7 +230,8 @@
         <div class="nav-item active" onclick="showTab('cron-jobs', event)">Cron Jobs</div>
         <div class="nav-item" onclick="showTab('token-usage', event)">Token Usage</div>
         <div class="nav-item" onclick="showTab('system-health', event)">System Health</div>
-        <div class="nav-item" onclick="showTab('projects', event)">Projects</div>
+        <div class="nav-item" onclick="showTab('projects-overview', event)">Projects</div>
+        <div class="nav-item" onclick="showTab('projects-master', event)">Master List</div>
       </div>
     </div>
     <div class="main">
@@ -280,18 +281,35 @@
         <div style="margin-top: 20px;" id="health-details"></div>
       </div>
 
-      <div id="projects" class="tab-content">
+      <div id="projects-overview" class="tab-content">
         <h2>Active Projects</h2>
+        <div id="projects-summary" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px;"></div>
         <table>
           <thead>
             <tr>
               <th>Project</th>
               <th>Status</th>
-              <th>Priority</th>
               <th>Category</th>
             </tr>
           </thead>
           <tbody id="projects-table">
+          </tbody>
+        </table>
+      </div>
+
+      <div id="projects-master" class="tab-content">
+        <h2>Master Project List</h2>
+        <div id="master-filters" style="margin-bottom: 20px;"></div>
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Status</th>
+              <th>Category</th>
+              <th>Last Update</th>
+            </tr>
+          </thead>
+          <tbody id="master-table">
           </tbody>
         </table>
       </div>
@@ -311,8 +329,10 @@
         loadTokenData();
       } else if (tabId === 'system-health') {
         loadSystemHealth();
-      } else if (tabId === 'projects') {
+      } else if (tabId === 'projects-overview') {
         loadProjects();
+      } else if (tabId === 'projects-master') {
+        loadMasterProjects();
       }
     }
 
@@ -357,6 +377,24 @@
         if (!response.ok) throw new Error('No projects data');
         const data = await response.json();
 
+        // Summary stats
+        const summary = {};
+        (data.projects || []).forEach(p => {
+          summary[p.category] = (summary[p.category] || 0) + 1;
+        });
+
+        let summaryHtml = '';
+        Object.entries(summary).forEach(([cat, count]) => {
+          summaryHtml += `
+            <div class="stat-card">
+              <h3>${cat}</h3>
+              <div class="value">${count}</div>
+            </div>
+          `;
+        });
+        document.getElementById('projects-summary').innerHTML = summaryHtml;
+
+        // Active projects table
         const tbody = document.getElementById('projects-table');
         tbody.innerHTML = '';
         (data.projects || []).forEach(project => {
@@ -365,16 +403,68 @@
           row.innerHTML = `
             <td><strong>${project.name}</strong></td>
             <td><span class="badge ${statusBadge}">${project.status}</span></td>
-            <td>${project.priority}</td>
             <td>${project.category}</td>
           `;
         });
 
         if (data.projects.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">No active projects</td></tr>';
+          tbody.innerHTML = '<tr><td colspan="3" style="text-align: center; color: #666;">No active projects</td></tr>';
         }
       } catch (err) {
-        document.getElementById('projects-table').innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">Unable to load projects</td></tr>';
+        document.getElementById('projects-table').innerHTML = '<tr><td colspan="3" style="text-align: center; color: #666;">Unable to load projects</td></tr>';
+      }
+    }
+
+    async function loadMasterProjects() {
+      try {
+        const response = await fetch('/data/projects-master.json');
+        if (!response.ok) throw new Error('No master data');
+        const data = await response.json();
+
+        // Build category filter
+        const categories = [...new Set((data.projects || []).map(p => p.category))].sort();
+        let filterHtml = '<label style="color: #8892b0; font-size: 12px; margin-right: 15px;"><input type="checkbox" id="filter-active" checked onchange="filterMasterTable()" /> Active Only</label>';
+        categories.forEach(cat => {
+          filterHtml += `<label style="color: #8892b0; font-size: 12px; margin-right: 15px;"><input type="checkbox" class="cat-filter" value="${cat}" onchange="filterMasterTable()" checked /> ${cat}</label>`;
+        });
+        document.getElementById('master-filters').innerHTML = filterHtml;
+
+        // Populate full table
+        window.masterProjectsData = data.projects || [];
+        filterMasterTable();
+      } catch (err) {
+        document.getElementById('master-filters').innerHTML = '<p style="color: #666;">Unable to load filters</p>';
+        document.getElementById('master-table').innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">Unable to load projects</td></tr>';
+      }
+    }
+
+    function filterMasterTable() {
+      const filterActive = document.getElementById('filter-active').checked;
+      const selectedCats = Array.from(document.querySelectorAll('.cat-filter:checked')).map(el => el.value);
+
+      const tbody = document.getElementById('master-table');
+      tbody.innerHTML = '';
+
+      let filtered = window.masterProjectsData || [];
+      if (filterActive) {
+        filtered = filtered.filter(p => p.status === 'active');
+      }
+      filtered = filtered.filter(p => selectedCats.includes(p.category));
+
+      filtered.forEach(project => {
+        const row = tbody.insertRow();
+        const statusClass = project.status === 'active' ? 'active' : 'inactive';
+        const lastUpdate = project.lastUpdate ? new Date(project.lastUpdate).toLocaleDateString() : '—';
+        row.innerHTML = `
+          <td><strong>${project.name}</strong></td>
+          <td><span class="badge ${statusClass}">${project.status}</span></td>
+          <td>${project.category}</td>
+          <td style="font-size: 11px; color: #666;">${lastUpdate}</td>
+        `;
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">No projects match filters</td></tr>';
       }
     }
 

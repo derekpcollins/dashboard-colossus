@@ -1,0 +1,429 @@
+{
+  "generated": "2026-04-12T18:21:09.351609",
+  "totalProjects": 47,
+  "projects": [
+    {
+      "id": "business_plan",
+      "name": "Business Plan",
+      "status": "active",
+      "category": "Business",
+      "location": "Projects/Business Plan.md",
+      "description": "Self-funded online business to generate revenue for Mac mini upgrade + AI token costs. Research and analysis in progress.",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "company_name_research_-_against_the_grain",
+      "name": "Company Name Research - Against The Grain",
+      "status": "active",
+      "category": "Business",
+      "location": "Projects/Company Name Research - Against The Grain.md",
+      "description": "| Variation | Status | Notes |",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "company_name_research_-_rdctd",
+      "name": "Company Name Research - Rdctd",
+      "status": "active",
+      "category": "Business",
+      "location": "Projects/Company Name Research - Rdctd.md",
+      "description": "| Variation | Notes |",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "gafshub_parts_scraper",
+      "name": "GAFSHub Parts Scraper",
+      "status": "active",
+      "category": "Business",
+      "location": "Projects/GAFSHub Parts Scraper.md",
+      "description": "Automated parts monitoring for GAFSHub.com (invite-only firearms marketplace). Custom scraper watches for specific keywords and sends real-time alerts.",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "bureau_of_general_affairs_business_plan",
+      "name": "Bureau of General Affairs Business Plan",
+      "status": "complete",
+      "category": "Business",
+      "location": "Projects/Bureau of General Affairs Business Plan.md",
+      "description": "A series of **focused, modular pocket guides** across multiple domains. Each guide is:",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "business_ideas_-_prospectus_&_analysis",
+      "name": "Business Ideas - Prospectus & Analysis",
+      "status": "complete",
+      "category": "Business",
+      "location": "Projects/Business Ideas - Prospectus & Analysis.md",
+      "description": "Sell downloadable PDF woodworking plans (step-by-step builds, cut lists, dimensions, SketchUp files) for real projects from Derek's shop. Target: weekend hobbyi...",
+      "lastUpdate": "2026-03-26"
+    },
+    {
+      "id": "company_name_research_-_redacted",
+      "name": "Company Name Research - Redacted",
+      "status": "complete",
+      "category": "Business",
+      "location": "Projects/Company Name Research - Redacted.md",
+      "description": "| Domain | Status | Registrar | Created | Expires | Active Site? | Notes |",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "30-day_financial_game_plan_\u2014_march\u2013april_2026",
+      "name": "30-Day Financial Game Plan \u2014 March\u2013April 2026",
+      "status": "complete",
+      "category": "Finance",
+      "location": "Projects/30-Day Financial Game Plan \u2014 March\u2013April 2026.md",
+      "description": "- [ ] **Pull last 90 days of Fidelity Visa statements** \u2014 go line by line. Every recurring charge that isn't essential gets cancelled. You're looking for the th...",
+      "lastUpdate": "2026-03-24"
+    },
+    {
+      "id": "debt_payoff_execution_plan",
+      "name": "Debt Payoff Execution Plan",
+      "status": "complete",
+      "category": "Finance",
+      "location": "Projects/Debt Payoff Execution Plan.md",
+      "description": "| Category | Monthly |",
+      "lastUpdate": "2026-04-10"
+    },
+    {
+      "id": "ar15_handguards_-_research",
+      "name": "AR15 Handguards - Research",
+      "status": "active",
+      "category": "Firearms",
+      "location": "Projects/AR15 Handguards - Research.md",
+      "description": "The factory-standard configuration on mil-spec AR-15s. Drop-in handguards are two-piece assemblies retained at the rear by the **delta ring**\u2014a spring-loaded co...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "lakewood_gun_club",
+      "name": "Lakewood Gun Club",
+      "status": "active",
+      "category": "Firearms",
+      "location": "Projects/Lakewood Gun Club.md",
+      "description": "- **Safety-first culture** \u2014 muzzle discipline, hearing/eye pro required, no exceptions",
+      "lastUpdate": "2026-04-06"
+    },
+    {
+      "id": "mantisx_dry_fire_routine",
+      "name": "MantisX Dry Fire Routine",
+      "status": "active",
+      "category": "Firearms",
+      "location": "Projects/MantisX Dry Fire Routine.md",
+      "description": "- [[\u2731 Firearms]]",
+      "lastUpdate": "2026-03-21"
+    },
+    {
+      "id": "11.5_sbr_build",
+      "name": "11.5\" SBR Build",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/11.5\" SBR Build.md",
+      "description": "| Component | Model | Notes | Status |",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "ar15_buffer_systems_(di)_-_research",
+      "name": "AR15 Buffer Systems (DI) - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Buffer Systems (DI) - Research.md",
+      "description": "The buffer tube \u2014 formally the \"receiver extension\" \u2014 is an aluminum housing threaded into the lower receiver that serves double duty: it contains the buffer an...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_designations_reference_-_complete_guide",
+      "name": "AR15 Designations Reference - Complete Guide",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Designations Reference - Complete Guide.md",
+      "description": "In **Aero Precision's** usage, \"E1\" = **Enhanced** \u2014 not engineering change. Their M4E1 lower and upper feature:",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "ar15_gas_blocks_and_tubes_-_research",
+      "name": "AR15 Gas Blocks and Tubes - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Gas Blocks and Tubes - Research.md",
+      "description": "The Front Sight Base is the original military gas block, combining the gas block function with an integrated A-frame front sight post. The FSB is the mil-spec c...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_history_&_naming_guide_-_research",
+      "name": "AR15 History & Naming Guide - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 History & Naming Guide - Research.md",
+      "description": "It's that simple. ArmaLite was the company (a division of Fairchild Engine & Airplane Corporation at the time) that designed the rifle. The \"15\" is the model nu...",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "ar15_lower_parts_kit_-_research",
+      "name": "AR15 Lower Parts Kit - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Lower Parts Kit - Research.md",
+      "description": "- Shaft diameter: 0.248\" (same as pivot/takedown pins \u2014 intentional for tooling standardization)",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_lower_receivers_-_brand_recommendations",
+      "name": "AR15 Lower Receivers - Brand Recommendations",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Lower Receivers - Brand Recommendations.md",
+      "description": "- **Price:** ~$40\u2013$60 stripped",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_lower_receivers_-_research",
+      "name": "AR15 Lower Receivers - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Lower Receivers - Research.md",
+      "description": "- Receiver only \u2014 no internal parts, no stock, no grip",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_muzzle_devices_-_research",
+      "name": "AR15 Muzzle Devices - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Muzzle Devices - Research.md",
+      "description": "A flash hider\u2014also called a flash suppressor\u2014is designed primarily to reduce the visible light emitted at the muzzle when a firearm is discharged. This signatur...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_pocket_guides_business",
+      "name": "AR15 Pocket Guides Business",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Pocket Guides Business.md",
+      "description": "- **Pocket Lint Corp** \u2014 Curating useful stuff that fits in your pocket",
+      "lastUpdate": "2026-04-02"
+    },
+    {
+      "id": "ar15_stocks_and_braces_-_research",
+      "name": "AR15 Stocks and Braces - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Stocks and Braces - Research.md",
+      "description": "Stocks don't attach directly to the lower receiver \u2014 they slide onto or clamp to the **receiver extension**, the tubular housing that contains the recoil buffer...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_triggers_-_research",
+      "name": "AR15 Triggers - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Triggers - Research.md",
+      "description": "The AR-15 fire control group (FCG) consists of five primary components: the **trigger**, **hammer**, **disconnector**, **trigger spring**, and **hammer spring**...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "ar15_upper_receivers_and_barrels_-_research",
+      "name": "AR15 Upper Receivers and Barrels - Research",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/AR15 Upper Receivers and Barrels - Research.md",
+      "description": "- Receiver body only \u2014 no barrel, no BCG, no charging handle, no handguard",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "q_honey_badger_clone_build",
+      "name": "Q Honey Badger Clone Build",
+      "status": "complete",
+      "category": "Firearms",
+      "location": "Projects/Q Honey Badger Clone Build.md",
+      "description": "- **Subsonic rounds** achieve hearing-safe sound levels (~135 dB with suppressor, no hearing protection needed)",
+      "lastUpdate": "2026-03-22"
+    },
+    {
+      "id": "cians_room_-_poster_hanging",
+      "name": "Cian's Room - Poster Hanging",
+      "status": "active",
+      "category": "House",
+      "location": "Projects/Cian's Room - Poster Hanging.md",
+      "description": "| Poster | Bracket X (Center) | Left Edge | Right Edge |",
+      "lastUpdate": "2026-04-11"
+    },
+    {
+      "id": "front_yard_landscaping_edging",
+      "name": "Front Yard Landscaping Edging",
+      "status": "active",
+      "category": "House",
+      "location": "Projects/Front Yard Landscaping Edging.md",
+      "description": "Install COR-TEN steel landscape edging around the entire front bed perimeter. COR-TEN develops a natural rust patina over time and lasts 100+ years with minimal...",
+      "lastUpdate": "2026-04-11"
+    },
+    {
+      "id": "hang_pictures_in_cians_room",
+      "name": "Hang Pictures in Cian's Room",
+      "status": "active",
+      "category": "House",
+      "location": "Projects/Hang Pictures in Cian's Room.md",
+      "description": "- [[\u2731 House]]",
+      "lastUpdate": "2026-03-21"
+    },
+    {
+      "id": "lawn_care",
+      "name": "Lawn Care",
+      "status": "active",
+      "category": "House",
+      "location": "Projects/Lawn Care.md",
+      "description": "Front lawn spring/summer maintenance plan for NE Ohio. Goal: eliminate clover, overseed thin areas, establish premium grass.",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "tv_install_-_sanus_mount",
+      "name": "TV Install - Sanus Mount",
+      "status": "active",
+      "category": "House",
+      "location": "Projects/TV Install - Sanus Mount.md",
+      "description": "- Exterior: 15.87\" W \u00d7 18.52\" H \u00d7 3.88\" D",
+      "lastUpdate": "2026-03-26"
+    },
+    {
+      "id": "backyard_entertainment_space",
+      "name": "Backyard Entertainment Space",
+      "status": "complete",
+      "category": "House",
+      "location": "Projects/Backyard Entertainment Space.md",
+      "description": "Create an outdoor gathering area with fireplace, pergola, seating, and entertainment amenities. Plan for drainage in wet clay soil (typical for Lakewood).",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "home_network_redesign",
+      "name": "Home Network Redesign",
+      "status": "complete",
+      "category": "House",
+      "location": "Projects/Home Network Redesign.md",
+      "description": "Security-first network architecture separating personal devices, IoT, and parental controls. Phased implementation with minimal disruption.",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "install_frame_tv",
+      "name": "Install Frame TV",
+      "status": "complete",
+      "category": "House",
+      "location": "Projects/Install Frame TV.md",
+      "description": "Install Samsung The Frame TV with Sanus in-wall cable box behind fireplace. Professional walkthrough with all considerations.",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "spring_lawn_care_schedule",
+      "name": "Spring Lawn Care Schedule",
+      "status": "complete",
+      "category": "House",
+      "location": "Projects/Spring Lawn Care Schedule.md",
+      "description": "Northern Ohio lawns are almost certainly **cool-season grass** (Kentucky bluegrass, tall fescue, or perennial ryegrass \u2014 often a mix). Clay soil is common in th...",
+      "lastUpdate": "2026-04-10"
+    },
+    {
+      "id": "boo_boo_kit",
+      "name": "Boo Boo Kit",
+      "status": "active",
+      "category": "Kits & Preparedness",
+      "location": "Projects/Boo Boo Kit.md",
+      "description": "Basic first aid supplies for minor wounds, pain, sunburn, and poison ivy/allergic reactions. **Separate from trauma kits.** Stored in vehicles (Tacoma cab + Riv...",
+      "lastUpdate": "2026-03-22"
+    },
+    {
+      "id": "ifak_(individual_first_aid_kit)",
+      "name": "IFAK (Individual First Aid Kit)",
+      "status": "active",
+      "category": "Kits & Preparedness",
+      "location": "Projects/IFAK (Individual First Aid Kit).md",
+      "description": "Minimal trauma-focused kit designed for everyday carry in Ferro Concepts Roll 1 Trauma Pouch. **Trauma only** \u2014 no boo boo items. Sized for single adult, kids +...",
+      "lastUpdate": "2026-03-25"
+    },
+    {
+      "id": "medical_kits",
+      "name": "Medical Kits",
+      "status": "active",
+      "category": "Kits & Preparedness",
+      "location": "Projects/Medical Kits.md",
+      "description": "Comprehensive medical preparedness across EDC, vehicles, and home. Organized by level of care (trauma vs. minor first aid) and location (personal carry, Tacoma,...",
+      "lastUpdate": "2026-03-22"
+    },
+    {
+      "id": "tactical_kit",
+      "name": "Tactical Kit",
+      "status": "complete",
+      "category": "Kits & Preparedness",
+      "location": "Projects/Tactical Kit.md",
+      "description": "- [ ] Meshtastic nodes \u2014 RAK WisBlock or Heltec V3, buy 2\u20133 (~$40/node)",
+      "lastUpdate": "2026-04-08"
+    },
+    {
+      "id": "learn_openclaw",
+      "name": "Learn OpenClaw",
+      "status": "complete",
+      "category": "Other",
+      "location": "Projects/Learn OpenClaw.md",
+      "description": "https://youtu.be/CxErCGVo-oo?si=AucqNzbAQOGZvk7R",
+      "lastUpdate": "2026-03-23"
+    },
+    {
+      "id": "seasonal_wardrobe",
+      "name": "Seasonal Wardrobe",
+      "status": "complete",
+      "category": "Personal",
+      "location": "Projects/Seasonal Wardrobe.md",
+      "description": "Building a functional, minimal wardrobe capsule based on body type, lifestyle, and proven brands. Focus: durability, premium materials, fit for athletic build (...",
+      "lastUpdate": "2026-03-27"
+    },
+    {
+      "id": "lakewood_school_levy_2026_website",
+      "name": "Lakewood School Levy 2026 Website",
+      "status": "active",
+      "category": "Travel & Community",
+      "location": "Projects/Lakewood School Levy 2026 Website.md",
+      "description": "- [ ] Have mobile menu sit on top of the content",
+      "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "travel_-_packing_guide_-_research",
+      "name": "Travel - Packing Guide - Research",
+      "status": "active",
+      "category": "Travel & Community",
+      "location": "Projects/Travel - Packing Guide - Research.md",
+      "description": "Every item you pack should do at least two jobs. A merino wool crew sweater works as a mid-layer under a jacket, a standalone shirt in cool weather, and a light...",
+      "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "tacoma_mods",
+      "name": "Tacoma Mods",
+      "status": "active",
+      "category": "Vehicles",
+      "location": "Projects/Tacoma Mods.md",
+      "description": "- **MyMedic MOLLE med kit** mounted to truck bed MOLLE panel alongside a red folding shovel",
+      "lastUpdate": "2026-03-23"
+    },
+    {
+      "id": "vehicle_trauma_kits_(tacoma_+_rivian)",
+      "name": "Vehicle Trauma Kits (Tacoma + Rivian)",
+      "status": "active",
+      "category": "Vehicles",
+      "location": "Projects/Vehicle Trauma Kits (Tacoma + Rivian).md",
+      "description": "Two separate trauma kits designed for vehicle storage: **Tacoma** (bed-mounted MOLLE bag, high-risk environment) + **Rivian** (interior, family). Both support \u00d7...",
+      "lastUpdate": "2026-03-25"
+    },
+    {
+      "id": "finding_a_new_car",
+      "name": "Finding a New Car",
+      "status": "complete",
+      "category": "Vehicles",
+      "location": "Projects/Finding a New Car.md",
+      "description": "Current car: **Rivian R1S** on lease \u2014 lemon law process in progress (~9 months left). Looking ahead at what comes next.",
+      "lastUpdate": "2026-03-24"
+    },
+    {
+      "id": "workbench_build",
+      "name": "Workbench Build",
+      "status": "active",
+      "category": "Woodworking",
+      "location": "Projects/Workbench Build.md",
+      "description": "- [[\u2731 Woodworking]]",
+      "lastUpdate": "2026-04-01"
+    }
+  ]
+}

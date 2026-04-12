@@ -1,0 +1,63 @@
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T16:00:01.129Z
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T17:00:00.707Z
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T18:00:01.295Z
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T19:00:00.768Z
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T20:00:01.126Z
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T21:00:01.447Z
+✅ Synced 3 cron jobs
+✅ Synced token usage (0 sessions)
+Running system health sync...
+/bin/sh: node: command not found
+⚠️ System health sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-system-health.js
+Running projects sync...
+/bin/sh: node: command not found
+⚠️ Projects sync failed: Command failed: node /Users/colossus/Developer/dashboard/scripts/sync-projects.js
+✅ Dashboard data synced at 2026-04-12T22:00:00.981Z

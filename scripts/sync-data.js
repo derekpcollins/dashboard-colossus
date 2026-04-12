@@ -122,4 +122,16 @@ try {
   console.error('⚠️ Projects sync failed:', err.message);
 }
 
+// Copy master projects file if it exists
+try {
+  const masterSrc = path.join(__dirname, '..', '..', 'dashboard', 'data', 'projects-master.json');
+  const masterDst = path.join(dataDir, 'projects-master.json');
+  if (fs.existsSync(masterSrc)) {
+    fs.copyFileSync(masterSrc, masterDst);
+    console.log('✅ Master projects synced');
+  }
+} catch (err) {
+  console.error('⚠️ Master projects sync failed:', err.message);
+}
+
 console.log(`✅ Dashboard data synced at ${new Date().toISOString()}`);
