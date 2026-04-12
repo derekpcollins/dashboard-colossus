@@ -166,8 +166,32 @@
       document.getElementById(tabId).classList.add('active');
       event.target.classList.add('active');
 
-      if (tabId === 'token-usage') {
+      if (tabId === 'cron-jobs') {
+        loadCronData();
+      } else if (tabId === 'token-usage') {
         loadTokenData();
+      }
+    }
+
+    async function loadCronData() {
+      try {
+        const response = await fetch('/data/crons.json');
+        if (!response.ok) throw new Error('No cron data');
+        const data = await response.json();
+        
+        const tbody = document.getElementById('cron-table');
+        tbody.innerHTML = '';
+        (data.crons || []).forEach(cron => {
+          const row = tbody.insertRow();
+          row.innerHTML = `
+            <td>${cron.time}</td>
+            <td>${cron.schedule}</td>
+            <td>${cron.task}</td>
+            <td><span class="badge active">Active</span></td>
+          `;
+        });
+      } catch (err) {
+        console.error('Failed to load cron data:', err);
       }
     }
 

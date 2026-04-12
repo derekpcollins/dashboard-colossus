@@ -1,0 +1,25 @@
+{
+  "crons": [
+    {
+      "time": "06:00",
+      "schedule": "Daily",
+      "task": "Morning Brief",
+      "status": "Active",
+      "raw": "0 6 * * * echo 'Morning brief' | logger -t morning-brief"
+    },
+    {
+      "time": "21:00",
+      "schedule": "Daily",
+      "task": "Evening Brief",
+      "status": "Active",
+      "raw": "0 21 * * * echo 'Evening brief' | logger -t evening-brief"
+    },
+    {
+      "time": "0*:00",
+      "schedule": "Daily",
+      "task": "/usr/local/bin/node ~/Developer/dashboard/scripts/sync-data.js >> ~/Developer/dashboard/logs/sync.log 2>&1",
+      "status": "Active",
+      "raw": "0 * * * * /usr/local/bin/node ~/Developer/dashboard/scripts/sync-data.js >> ~/Developer/dashboard/logs/sync.log 2>&1"
+    }
+  ]
+}
