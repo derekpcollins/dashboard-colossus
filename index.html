@@ -226,6 +226,9 @@
       <div id="token-usage" class="tab-content">
         <h2>Token Usage</h2>
         <div id="token-summary" class="loading">Loading...</div>
+        <h3 style="margin-top: 30px; margin-bottom: 15px;">Today's Usage</h3>
+        <div id="today-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;"></div>
+        <h3 style="margin-top: 30px; margin-bottom: 15px;">Session History</h3>
         <table>
           <thead>
             <tr>
@@ -399,7 +402,7 @@
         if (!response.ok) throw new Error('No token data');
         const data = await response.json();
 
-        // Summary stats
+        // Summary stats (all-time)
         let summary = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">';
         Object.entries(data.summary || {}).forEach(([model, stats]) => {
           summary += `
@@ -412,6 +415,45 @@
         });
         summary += '</div>';
         document.getElementById('token-summary').innerHTML = summary;
+
+        // Today's usage
+        const today = new Date().toDateString();
+        const todayStats = {};
+        let todayTotal = 0;
+        
+        (data.sessions || []).forEach(session => {
+          const sessionDate = new Date(session.timestamp).toDateString();
+          if (sessionDate === today) {
+            if (!todayStats[session.model]) {
+              todayStats[session.model] = { total: 0, sessions: 0 };
+            }
+            todayStats[session.model].total += session.totalTokens;
+            todayStats[session.model].sessions += 1;
+            todayTotal += session.totalTokens;
+          }
+        });
+
+        let todayHtml = '';
+        if (todayTotal === 0) {
+          todayHtml = '<p style="color: #666;">No sessions yet today</p>';
+        } else {
+          Object.entries(todayStats).forEach(([model, stats]) => {
+            todayHtml += `
+              <div class="stat-card">
+                <h3>${model.split('/')[1] || model}</h3>
+                <div class="value">${stats.total.toLocaleString()}</div>
+                <div style="font-size: 12px; color: #666;">${stats.sessions} session${stats.sessions !== 1 ? 's' : ''}</div>
+              </div>
+            `;
+          });
+          todayHtml += `
+            <div class="stat-card" style="border-left-color: #ff9500; grid-column: 1 / -1;">
+              <h3>Today Total</h3>
+              <div class="value">${todayTotal.toLocaleString()}</div>
+            </div>
+          `;
+        }
+        document.getElementById('today-stats').innerHTML = todayHtml;
 
         // Sessions table
         const tbody = document.getElementById('token-table');
