@@ -21,6 +21,14 @@ function syncCronJobs() {
   try {
     const crontab = execSync('crontab -l 2>/dev/null || echo ""', { encoding: 'utf8' });
     const cronFile = path.join(dataDir, 'crons.json');
+    
+    // Load existing data to preserve last run times
+    let existing = { crons: [] };
+    if (fs.existsSync(cronFile)) {
+      try {
+        existing = JSON.parse(fs.readFileSync(cronFile, 'utf8'));
+      } catch {}
+    }
 
     const crons = [];
     crontab.split('\n').forEach(line => {
@@ -38,12 +46,18 @@ function syncCronJobs() {
       let name = command;
       if (command.includes('morning-brief')) name = 'Morning Brief';
       else if (command.includes('evening-brief')) name = 'Evening Brief';
+      else if (command.includes('sync-data')) name = 'Dashboard Sync';
+
+      // Find last run time from existing data
+      const existing_cron = existing.crons.find(c => c.task === name);
+      const lastRun = existing_cron ? existing_cron.lastRun : null;
 
       crons.push({
         time: `${hour.padStart(2, '0')}:${minute.padStart(2, '0')}`,
         schedule: 'Daily',
         task: name,
         status: 'Active',
+        lastRun: lastRun,
         raw: line
       });
     });

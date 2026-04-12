@@ -120,21 +120,10 @@
               <th>Schedule</th>
               <th>Task</th>
               <th>Status</th>
+              <th>Last Run</th>
             </tr>
           </thead>
           <tbody id="cron-table">
-            <tr>
-              <td>06:00</td>
-              <td>Daily</td>
-              <td>Morning Brief</td>
-              <td><span class="badge active">Active</span></td>
-            </tr>
-            <tr>
-              <td>21:00</td>
-              <td>Daily</td>
-              <td>Evening Brief</td>
-              <td><span class="badge active">Active</span></td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -182,12 +171,16 @@
         const tbody = document.getElementById('cron-table');
         tbody.innerHTML = '';
         (data.crons || []).forEach(cron => {
+          const lastRunText = cron.lastRun 
+            ? new Date(cron.lastRun).toLocaleString()
+            : '—';
           const row = tbody.insertRow();
           row.innerHTML = `
             <td>${cron.time}</td>
             <td>${cron.schedule}</td>
             <td>${cron.task}</td>
             <td><span class="badge active">Active</span></td>
+            <td>${lastRunText}</td>
           `;
         });
       } catch (err) {
