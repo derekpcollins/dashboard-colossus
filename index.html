@@ -7,8 +7,8 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f0f0f;
+      font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Menlo, monospace;
+      background: #0a0e27;
       color: #e0e0e0;
     }
     .container {
@@ -16,42 +16,56 @@
       height: 100vh;
     }
     .sidebar {
-      width: 200px;
-      background: #1a1a1a;
-      border-right: 1px solid #333;
+      width: 220px;
+      background: linear-gradient(180deg, #0f1428 0%, #0a0e27 100%);
+      border-right: 1px solid #1a2847;
       padding: 20px;
     }
     .sidebar h3 {
-      font-size: 16px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
       margin-bottom: 20px;
+      color: #8892b0;
+      font-weight: 600;
     }
     .nav-item {
-      padding: 10px;
-      margin: 5px 0;
+      padding: 10px 12px;
+      margin: 4px 0;
       cursor: pointer;
-      border-radius: 4px;
-      font-size: 14px;
-      transition: background 0.2s;
+      border-radius: 3px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      transition: all 0.2s;
+      border-left: 2px solid transparent;
     }
     .nav-item:hover {
-      background: #333;
+      background: rgba(72, 187, 255, 0.1);
+      border-left-color: #48bbff;
     }
     .nav-item.active {
-      background: #0066cc;
-      color: white;
+      background: rgba(72, 187, 255, 0.15);
+      color: #48bbff;
+      border-left-color: #48bbff;
     }
     .main {
       flex: 1;
       padding: 40px;
       overflow-y: auto;
+      background: #0a0e27;
     }
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       margin-bottom: 30px;
+      letter-spacing: -0.5px;
+      color: #48bbff;
     }
     h2 {
-      font-size: 24px;
+      font-size: 18px;
       margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #8892b0;
     }
     .tab-content { display: none; }
     .tab-content.active { display: block; }
@@ -59,41 +73,57 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
+      font-size: 12px;
     }
     th, td {
-      padding: 12px;
+      padding: 10px 12px;
       text-align: left;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #1a2847;
     }
     th {
-      background: #1a1a1a;
+      background: transparent;
+      color: #8892b0;
       font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 11px;
     }
-    tr:hover { background: #1a1a1a; }
+    tr:hover { background: rgba(72, 187, 255, 0.05); }
+    td {
+      color: #cad3f5;
+    }
     .badge {
       display: inline-block;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 11px;
       font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
-    .badge.active { background: #0066cc; color: white; }
-    .badge.inactive { background: #555; color: #999; }
+    .badge.active { background: rgba(72, 187, 255, 0.2); color: #48bbff; }
+    .badge.inactive { background: rgba(139, 146, 176, 0.1); color: #8b92b0; }
     .stat-card {
-      background: #1a1a1a;
+      background: linear-gradient(135deg, #0f1734 0%, #1a1f4a 100%);
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 6px;
       margin: 10px 0;
-      border-left: 3px solid #0066cc;
+      border-left: 3px solid #48bbff;
+      border: 1px solid #1a2847;
+      border-left: 3px solid #48bbff;
     }
     .stat-card h3 {
-      font-size: 14px;
-      color: #999;
-      margin-bottom: 5px;
+      font-size: 11px;
+      color: #8892b0;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
     .stat-card .value {
-      font-size: 28px;
-      font-weight: bold;
+      font-size: 24px;
+      font-weight: 600;
+      color: #48bbff;
+      letter-spacing: -0.5px;
     }
     .loading {
       color: #999;
