@@ -179,6 +179,8 @@
       <h3>Colossus</h3>
       <div class="nav-item active" onclick="showTab('cron-jobs', event)">Cron Jobs</div>
       <div class="nav-item" onclick="showTab('token-usage', event)">Token Usage</div>
+      <div class="nav-item" onclick="showTab('system-health', event)">System Health</div>
+      <div class="nav-item" onclick="showTab('projects', event)">Projects</div>
     </div>
     <div class="main">
       <h1>Dashboard</h1>
@@ -217,6 +219,28 @@
           </tbody>
         </table>
       </div>
+
+      <div id="system-health" class="tab-content">
+        <h2>System Health</h2>
+        <div id="health-cards" class="loading">Loading...</div>
+        <div style="margin-top: 20px;" id="health-details"></div>
+      </div>
+
+      <div id="projects" class="tab-content">
+        <h2>Active Projects</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody id="projects-table">
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -231,6 +255,72 @@
         loadCronData();
       } else if (tabId === 'token-usage') {
         loadTokenData();
+      } else if (tabId === 'system-health') {
+        loadSystemHealth();
+      } else if (tabId === 'projects') {
+        loadProjects();
+      }
+    }
+
+    async function loadSystemHealth() {
+      try {
+        const response = await fetch('/data/system-health.json');
+        if (!response.ok) throw new Error('No health data');
+        const health = await response.json();
+
+        let cards = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">';
+        cards += `
+          <div class="stat-card">
+            <h3>Uptime</h3>
+            <div class="value" style="font-size: 14px; word-break: break-word;">${health.uptime}</div>
+          </div>
+          <div class="stat-card">
+            <h3>Disk</h3>
+            <div class="value">${health.disk.percent}</div>
+            <div style="font-size: 12px; color: #666;">${health.disk.used} / ${health.disk.total}</div>
+          </div>
+          <div class="stat-card">
+            <h3>Network</h3>
+            <div class="value" style="font-size: 16px;">${health.network}</div>
+          </div>
+          <div class="stat-card">
+            <h3>Status</h3>
+            <div class="value" style="font-size: 18px; color: #0066cc;">${health.status}</div>
+          </div>
+        `;
+        cards += '</div>';
+        document.getElementById('health-cards').innerHTML = cards;
+
+        document.getElementById('health-details').innerHTML = `<p style="font-size: 12px; color: #666;">Last synced: ${new Date(health.timestamp).toLocaleString()}</p>`;
+      } catch (err) {
+        document.getElementById('health-cards').innerHTML = '<p style="color: #666;">No health data available</p>';
+      }
+    }
+
+    async function loadProjects() {
+      try {
+        const response = await fetch('/data/projects.json');
+        if (!response.ok) throw new Error('No projects data');
+        const data = await response.json();
+
+        const tbody = document.getElementById('projects-table');
+        tbody.innerHTML = '';
+        (data.projects || []).forEach(project => {
+          const row = tbody.insertRow();
+          const statusBadge = project.status === 'active' ? 'active' : 'inactive';
+          row.innerHTML = `
+            <td><strong>${project.name}</strong></td>
+            <td><span class="badge ${statusBadge}">${project.status}</span></td>
+            <td>${project.priority}</td>
+            <td>${project.category}</td>
+          `;
+        });
+
+        if (data.projects.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">No active projects</td></tr>';
+        }
+      } catch (err) {
+        document.getElementById('projects-table').innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">Unable to load projects</td></tr>';
       }
     }
 

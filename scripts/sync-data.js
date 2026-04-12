@@ -106,4 +106,20 @@ function syncTokenUsage() {
 
 syncCronJobs();
 syncTokenUsage();
+
+// Run child sync scripts
+try {
+  console.log('Running system health sync...');
+  execSync(`node ${path.join(__dirname, 'sync-system-health.js')}`, { stdio: 'inherit' });
+} catch (err) {
+  console.error('⚠️ System health sync failed:', err.message);
+}
+
+try {
+  console.log('Running projects sync...');
+  execSync(`node ${path.join(__dirname, 'sync-projects.js')}`, { stdio: 'inherit' });
+} catch (err) {
+  console.error('⚠️ Projects sync failed:', err.message);
+}
+
 console.log(`✅ Dashboard data synced at ${new Date().toISOString()}`);
