@@ -1,6 +1,10 @@
 {
-  "generated": "2026-04-12T22:27:51.655709+00:00",
+  "generated": "2026-04-12T22:32:49.924Z",
   "totalProjects": 42,
+  "statusCounts": {
+    "active": 13,
+    "complete": 29
+  },
   "projects": [
     {
       "id": "business_plan",
@@ -30,7 +34,7 @@
       "lastUpdate": "2026-04-09"
     },
     {
-      "id": "business_ideas_-_prospectus_&_analysis",
+      "id": "business_ideas_-_prospectus_analysis",
       "name": "Business Ideas - Prospectus & Analysis",
       "status": "complete",
       "category": "Business",
@@ -48,12 +52,12 @@
       "lastUpdate": "2026-03-28"
     },
     {
-      "id": "30-day_financial_game_plan_\u2014_march\u2013april_2026",
-      "name": "30-Day Financial Game Plan \u2014 March\u2013April 2026",
+      "id": "30-day_financial_game_plan_marchapril_2026",
+      "name": "30-Day Financial Game Plan — March–April 2026",
       "status": "complete",
       "category": "Finance",
-      "location": "Projects/30-Day Financial Game Plan \u2014 March\u2013April 2026.md",
-      "description": "- [ ] **Pull last 90 days of Fidelity Visa statements** \u2014 go line by line. Every recurring charge that isn't essential gets cancelled. You're looking for the th...",
+      "location": "Projects/30-Day Financial Game Plan — March–April 2026.md",
+      "description": "- [ ] **Pull last 90 days of Fidelity Visa statements** — go line by line. Every recurring charge that isn't essential gets cancelled. You're looking for the th...",
       "lastUpdate": "2026-03-24"
     },
     {
@@ -71,7 +75,7 @@
       "status": "active",
       "category": "Firearms",
       "location": "Projects/AR15 Handguards - Research.md",
-      "description": "The factory-standard configuration on mil-spec AR-15s. Drop-in handguards are two-piece assemblies retained at the rear by the **delta ring**\u2014a spring-loaded co...",
+      "description": "The factory-standard configuration on mil-spec AR-15s. Drop-in handguards are two-piece assemblies retained at the rear by the **delta ring**—a spring-loaded co...",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -80,7 +84,7 @@
       "status": "active",
       "category": "Firearms",
       "location": "Projects/Lakewood Gun Club.md",
-      "description": "- **Safety-first culture** \u2014 muzzle discipline, hearing/eye pro required, no exceptions",
+      "description": "- **Safety-first culture** — muzzle discipline, hearing/eye pro required, no exceptions",
       "lastUpdate": "2026-04-06"
     },
     {
@@ -89,11 +93,11 @@
       "status": "active",
       "category": "Firearms",
       "location": "Projects/MantisX Dry Fire Routine.md",
-      "description": "- [[\u2731 Firearms]]",
+      "description": "- [[✱ Firearms]]",
       "lastUpdate": "2026-03-21"
     },
     {
-      "id": "11.5_sbr_build",
+      "id": "115_sbr_build",
       "name": "11.5\" SBR Build",
       "status": "complete",
       "category": "Firearms",
@@ -102,12 +106,12 @@
       "lastUpdate": "2026-03-27"
     },
     {
-      "id": "ar15_buffer_systems_(di)_-_research",
+      "id": "ar15_buffer_systems_di_-_research",
       "name": "AR15 Buffer Systems (DI) - Research",
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Buffer Systems (DI) - Research.md",
-      "description": "The buffer tube \u2014 formally the \"receiver extension\" \u2014 is an aluminum housing threaded into the lower receiver that serves double duty: it contains the buffer an...",
+      "description": "The buffer tube — formally the \"receiver extension\" — is an aluminum housing threaded into the lower receiver that serves double duty: it contains the buffer an...",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -116,7 +120,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Designations Reference - Complete Guide.md",
-      "description": "In **Aero Precision's** usage, \"E1\" = **Enhanced** \u2014 not engineering change. Their M4E1 lower and upper feature:",
+      "description": "In **Aero Precision's** usage, \"E1\" = **Enhanced** — not engineering change. Their M4E1 lower and upper feature:",
       "lastUpdate": "2026-03-28"
     },
     {
@@ -129,7 +133,7 @@
       "lastUpdate": "2026-04-09"
     },
     {
-      "id": "ar15_history_&_naming_guide_-_research",
+      "id": "ar15_history_naming_guide_-_research",
       "name": "AR15 History & Naming Guide - Research",
       "status": "complete",
       "category": "Firearms",
@@ -143,7 +147,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Lower Parts Kit - Research.md",
-      "description": "- Shaft diameter: 0.248\" (same as pivot/takedown pins \u2014 intentional for tooling standardization)",
+      "description": "- Shaft diameter: 0.248\" (same as pivot/takedown pins — intentional for tooling standardization)",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -152,7 +156,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Lower Receivers - Brand Recommendations.md",
-      "description": "- **Price:** ~$40\u2013$60 stripped",
+      "description": "- **Price:** ~$40–$60 stripped",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -161,7 +165,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Lower Receivers - Research.md",
-      "description": "- Receiver only \u2014 no internal parts, no stock, no grip",
+      "description": "- Receiver only — no internal parts, no stock, no grip",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -170,7 +174,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Muzzle Devices - Research.md",
-      "description": "A flash hider\u2014also called a flash suppressor\u2014is designed primarily to reduce the visible light emitted at the muzzle when a firearm is discharged. This signatur...",
+      "description": "A flash hider—also called a flash suppressor—is designed primarily to reduce the visible light emitted at the muzzle when a firearm is discharged. This signatur...",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -179,7 +183,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Pocket Guides Business.md",
-      "description": "- **Pocket Lint Corp** \u2014 Curating useful stuff that fits in your pocket",
+      "description": "- **Pocket Lint Corp** — Curating useful stuff that fits in your pocket",
       "lastUpdate": "2026-04-02"
     },
     {
@@ -188,7 +192,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Stocks and Braces - Research.md",
-      "description": "Stocks don't attach directly to the lower receiver \u2014 they slide onto or clamp to the **receiver extension**, the tubular housing that contains the recoil buffer...",
+      "description": "Stocks don't attach directly to the lower receiver — they slide onto or clamp to the **receiver extension**, the tubular housing that contains the recoil buffer...",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -206,7 +210,7 @@
       "status": "complete",
       "category": "Firearms",
       "location": "Projects/AR15 Upper Receivers and Barrels - Research.md",
-      "description": "- Receiver body only \u2014 no barrel, no BCG, no charging handle, no handguard",
+      "description": "- Receiver body only — no barrel, no BCG, no charging handle, no handguard",
       "lastUpdate": "2026-04-09"
     },
     {
@@ -221,7 +225,7 @@
     {
       "id": "cians_room_-_poster_hanging",
       "name": "Cian's Room - Poster Hanging",
-      "status": "complete",
+      "status": "active",
       "category": "House",
       "location": "Projects/Cian's Room - Poster Hanging.md",
       "description": "| Poster | Bracket X (Center) | Left Edge | Right Edge |",
@@ -235,15 +239,6 @@
       "location": "Projects/Front Yard Landscaping Edging.md",
       "description": "Install COR-TEN steel landscape edging around the entire front bed perimeter. COR-TEN develops a natural rust patina over time and lasts 100+ years with minimal...",
       "lastUpdate": "2026-04-11"
-    },
-    {
-      "id": "hang_pictures_in_cians_room",
-      "name": "Hang Pictures in Cian's Room",
-      "status": "complete",
-      "category": "House",
-      "location": "Projects/Hang Pictures in Cian's Room.md",
-      "description": "- [[\u2731 House]]",
-      "lastUpdate": "2026-04-12"
     },
     {
       "id": "lawn_care",
@@ -260,7 +255,7 @@
       "status": "active",
       "category": "House",
       "location": "Projects/TV Install - Sanus Mount.md",
-      "description": "- Exterior: 15.87\" W \u00d7 18.52\" H \u00d7 3.88\" D",
+      "description": "- Exterior: 15.87\" W × 18.52\" H × 3.88\" D",
       "lastUpdate": "2026-03-26"
     },
     {
@@ -271,6 +266,15 @@
       "location": "Projects/Backyard Entertainment Space.md",
       "description": "Create an outdoor gathering area with fireplace, pergola, seating, and entertainment amenities. Plan for drainage in wet clay soil (typical for Lakewood).",
       "lastUpdate": "2026-03-28"
+    },
+    {
+      "id": "hang_pictures_in_cians_room",
+      "name": "Hang Pictures in Cian's Room",
+      "status": "complete",
+      "category": "House",
+      "location": "Projects/Hang Pictures in Cian's Room.md",
+      "description": "- [[✱ House]]",
+      "lastUpdate": "2026-04-12"
     },
     {
       "id": "home_network_redesign",
@@ -296,7 +300,7 @@
       "status": "complete",
       "category": "House",
       "location": "Projects/Spring Lawn Care Schedule.md",
-      "description": "Northern Ohio lawns are almost certainly **cool-season grass** (Kentucky bluegrass, tall fescue, or perennial ryegrass \u2014 often a mix). Clay soil is common in th...",
+      "description": "Northern Ohio lawns are almost certainly **cool-season grass** (Kentucky bluegrass, tall fescue, or perennial ryegrass — often a mix). Clay soil is common in th...",
       "lastUpdate": "2026-04-10"
     },
     {
@@ -314,7 +318,7 @@
       "status": "complete",
       "category": "Kits & Preparedness",
       "location": "Projects/Tactical Kit.md",
-      "description": "- [ ] Meshtastic nodes \u2014 RAK WisBlock or Heltec V3, buy 2\u20133 (~$40/node)",
+      "description": "- [ ] Meshtastic nodes — RAK WisBlock or Heltec V3, buy 2–3 (~$40/node)",
       "lastUpdate": "2026-04-08"
     },
     {
@@ -336,15 +340,6 @@
       "lastUpdate": "2026-03-27"
     },
     {
-      "id": "lakewood_school_levy_2026_website",
-      "name": "Lakewood School Levy 2026 Website",
-      "status": "complete",
-      "category": "Travel & Community",
-      "location": "Projects/Lakewood School Levy 2026 Website.md",
-      "description": "- [ ] Have mobile menu sit on top of the content",
-      "lastUpdate": "2026-04-12"
-    },
-    {
       "id": "travel_-_packing_guide_-_research",
       "name": "Travel - Packing Guide - Research",
       "status": "active",
@@ -352,6 +347,15 @@
       "location": "Projects/Travel - Packing Guide - Research.md",
       "description": "Every item you pack should do at least two jobs. A merino wool crew sweater works as a mid-layer under a jacket, a standalone shirt in cool weather, and a light...",
       "lastUpdate": "2026-04-09"
+    },
+    {
+      "id": "lakewood_school_levy_2026_website",
+      "name": "Lakewood School Levy 2026 Website",
+      "status": "complete",
+      "category": "Travel & Community",
+      "location": "Projects/Lakewood School Levy 2026 Website.md",
+      "description": "- [ ] Have mobile menu sit on top of the content",
+      "lastUpdate": "2026-04-12"
     },
     {
       "id": "tacoma_mods",
@@ -368,7 +372,7 @@
       "status": "complete",
       "category": "Vehicles",
       "location": "Projects/Finding a New Car.md",
-      "description": "Current car: **Rivian R1S** on lease \u2014 lemon law process in progress (~9 months left). Looking ahead at what comes next.",
+      "description": "Current car: **Rivian R1S** on lease — lemon law process in progress (~9 months left). Looking ahead at what comes next.",
       "lastUpdate": "2026-03-24"
     },
     {
@@ -377,7 +381,7 @@
       "status": "active",
       "category": "Woodworking",
       "location": "Projects/Workbench Build.md",
-      "description": "- [[\u2731 Woodworking]]",
+      "description": "- [[✱ Woodworking]]",
       "lastUpdate": "2026-04-01"
     }
   ]

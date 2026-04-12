@@ -107,6 +107,14 @@ function syncTokenUsage() {
 syncCronJobs();
 syncTokenUsage();
 
+// Parse PROJECTS.md first to generate the master JSON from markdown
+try {
+  console.log('Generating projects-master.json from PROJECTS.md...');
+  execSync(`node ${path.join(__dirname, 'parse-projects.js')}`, { stdio: 'inherit' });
+} catch (err) {
+  console.error('⚠️ Projects markdown parsing failed:', err.message);
+}
+
 // Run child sync scripts
 try {
   console.log('Running system health sync...');
@@ -120,18 +128,6 @@ try {
   execSync(`node ${path.join(__dirname, 'sync-projects.js')}`, { stdio: 'inherit' });
 } catch (err) {
   console.error('⚠️ Projects sync failed:', err.message);
-}
-
-// Copy master projects file if it exists
-try {
-  const masterSrc = path.join(__dirname, '..', '..', 'dashboard', 'data', 'projects-master.json');
-  const masterDst = path.join(dataDir, 'projects-master.json');
-  if (fs.existsSync(masterSrc)) {
-    fs.copyFileSync(masterSrc, masterDst);
-    console.log('✅ Master projects synced');
-  }
-} catch (err) {
-  console.error('⚠️ Master projects sync failed:', err.message);
 }
 
 console.log(`✅ Dashboard data synced at ${new Date().toISOString()}`);
