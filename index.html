@@ -112,16 +112,32 @@
         border-bottom: 1px solid #333;
         padding: 15px;
         display: flex;
+        flex-direction: column;
+      }
+      .sidebar > div:first-child {
+        display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 10px;
       }
       .sidebar h3 {
         margin-bottom: 0;
       }
+      #menu-toggle {
+        display: block !important;
+      }
+      #nav-items {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+      }
+      #nav-items.open {
+        display: flex;
+      }
       .nav-item {
-        display: inline-block;
-        padding: 8px 12px;
-        margin: 0 5px;
+        display: block;
+        padding: 10px;
+        margin: 0;
       }
       .main {
         padding: 20px;
@@ -175,12 +191,17 @@
 </head>
 <body>
   <div class="container">
-    <div class="sidebar">
-      <h3>Colossus</h3>
-      <div class="nav-item active" onclick="showTab('cron-jobs', event)">Cron Jobs</div>
-      <div class="nav-item" onclick="showTab('token-usage', event)">Token Usage</div>
-      <div class="nav-item" onclick="showTab('system-health', event)">System Health</div>
-      <div class="nav-item" onclick="showTab('projects', event)">Projects</div>
+    <div class="sidebar" id="sidebar">
+      <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <h3>Colossus</h3>
+        <button id="menu-toggle" style="display: none; background: none; border: none; color: #e0e0e0; font-size: 24px; cursor: pointer; padding: 5px;">☰</button>
+      </div>
+      <div id="nav-items">
+        <div class="nav-item active" onclick="showTab('cron-jobs', event)">Cron Jobs</div>
+        <div class="nav-item" onclick="showTab('token-usage', event)">Token Usage</div>
+        <div class="nav-item" onclick="showTab('system-health', event)">System Health</div>
+        <div class="nav-item" onclick="showTab('projects', event)">Projects</div>
+      </div>
     </div>
     <div class="main">
       <h1>Dashboard</h1>
@@ -323,6 +344,23 @@
         document.getElementById('projects-table').innerHTML = '<tr><td colspan="4" style="text-align: center; color: #666;">Unable to load projects</td></tr>';
       }
     }
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navItems = document.getElementById('nav-items');
+    
+    menuToggle.addEventListener('click', () => {
+      navItems.classList.toggle('open');
+    });
+
+    // Close menu when nav item clicked
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navItems.classList.remove('open');
+        }
+      });
+    });
 
     // Load data on page load
     document.addEventListener('DOMContentLoaded', () => {
