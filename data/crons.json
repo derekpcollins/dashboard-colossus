@@ -19,7 +19,7 @@
       "schedule": "Daily",
       "task": "Dashboard Sync",
       "status": "Active",
-      "lastRun": "2026-04-12T22:00:00.776Z",
+      "lastRun": "2026-04-13T00:00:00.716Z",
       "raw": "0 * * * * /usr/local/bin/node ~/Developer/dashboard/scripts/log-cron.js --name \"Dashboard Sync\" && /usr/local/bin/node ~/Developer/dashboard/scripts/sync-data.js >> ~/Developer/dashboard/logs/sync.log 2>&1"
     }
   ]

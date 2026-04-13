@@ -7,8 +7,8 @@
 
 | Status | Count |
 |--------|-------|
-| **Active** | 15 |
-| **Complete** | 27 |
+| **Active** | 14 |
+| **Complete** | 28 |
 
 ## Projects by Category
 
@@ -129,11 +129,7 @@
 
 ### House (9)
 
-#### Active (4)
-
-- **Cian's Room - Poster Hanging**  
-  __| Poster | Bracket X (Center) | Left Edge | Right Edge |__  
-  📍 `Projects/Cian's Room - Poster Hanging.md` | 📅 2026-04-12
+#### Active (3)
 
 - **Front Yard Landscaping Edging**  
   __Install COR-TEN steel landscape edging around the entire front bed perimeter. COR-TEN develops a natural rust patina over time and lasts 100+ years with minimal...__  
@@ -147,7 +143,11 @@
   __- Exterior: 15.87" W × 18.52" H × 3.88" D__  
   📍 `Projects/TV Install - Sanus Mount.md` | 📅 2026-03-26
 
-#### Complete (5)
+#### Complete (6)
+
+- **Cian's Room - Poster Hanging**  
+  __Poster bracket installation measurements and placement for Cian's bedroom. All three posters hung and positioned.__  
+  📍 `Projects/Cian's Room - Poster Hanging.md` | 📅 2026-04-12
 
 - **Backyard Entertainment Space**  
   __Create an outdoor gathering area with fireplace, pergola, seating, and entertainment amenities. Plan for drainage in wet clay soil (typical for Lakewood).__  
